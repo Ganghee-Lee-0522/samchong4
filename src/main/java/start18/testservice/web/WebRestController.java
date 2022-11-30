@@ -29,13 +29,4 @@ public class WebRestController {
 
         return postsService.save(dto);
     }
-
-    @GetMapping("/profile")
-    public String getProfile () {
-        return Arrays.stream(env.getActiveProfiles())
-                .findFirst()
-                .orElse("");
-    }
-
-
 }
