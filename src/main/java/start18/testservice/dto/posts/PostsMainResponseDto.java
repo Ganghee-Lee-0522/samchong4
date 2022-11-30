@@ -1,4 +1,4 @@
-package start18.testservice.dto;
+package start18.testservice.dto.posts;
 
 import lombok.Getter;
 import start18.testservice.domain.posts.Posts;

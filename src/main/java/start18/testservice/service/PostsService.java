@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import start18.testservice.domain.posts.PostsRepository;
-import start18.testservice.dto.PostsMainResponseDto;
+import start18.testservice.dto.posts.PostsMainResponseDto;
 import start18.testservice.dto.posts.PostsSaveRequestDto;
 
 import java.util.List;
