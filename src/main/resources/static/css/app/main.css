@@ -1,20 +1,23 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500&display=swap');
+
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Serif KR', serif;
   font-weight: 300;
   line-height: 1.42em;
-  color:#A7A1AE;
-  background-color:#1F2739;
+  color:#000000;
+  background-color:#EBEBEB;
 }
 
 h1 {
+  font-family: 'Noto Serif KR', serif;
   font-size:3em;
   font-weight: 300;
-  line-height:1em;
+  line-height:5em;
   text-align: center;
-  color: #4DC3FA;
+  color: #000000;
 }
 
 h2 {
@@ -34,22 +37,16 @@ h2 a {
   text-decoration: none;
 }
 
-.blue { color: #185875; }
-.yellow { color: #FFF842; }
-
 .table th h1 {
     font-weight: bold;
     font-size: 1em;
   text-align: left;
-  color: #185875;
+  color: #252937;
 }
 
 .table td {
     font-weight: normal;
     font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-     -moz-box-shadow: 0 2px 2px -2px #0E1119;
-          box-shadow: 0 2px 2px -2px #0E1119;
 }
 
 .table {
@@ -59,6 +56,7 @@ h2 a {
     margin: 0 auto;
   display: table;
   padding: 0 0 8em 0;
+  color: #FFFFFF;
 }
 
 .table td, .table th {
@@ -78,33 +76,6 @@ h2 a {
 }
 
 .table th {
-    background-color: #1F2739;
-}
-
-.table td:first-child { color: #FB667A; }
-
-.table tr:hover {
-   background-color: #464A52;
--webkit-box-shadow: 0 6px 6px -6px #0E1119;
-     -moz-box-shadow: 0 6px 6px -6px #0E1119;
-          box-shadow: 0 6px 6px -6px #0E1119;
-}
-
-.table td:hover {
-  background-color: #FFF842;
-  color: #403E10;
-  font-weight: bold;
-
-  box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px, #7F7C21 -5px 5px, #7F7C21 -6px 6px;
-  transform: translate3d(6px, -6px, 0);
-
-  transition-delay: 0s;
-    transition-duration: 0.4s;
-    transition-property: all;
-  transition-timing-function: line;
-}
-
-@media (max-width: 800px) {
-.container td:nth-child(4),
-.container th:nth-child(4) { display: none; }
+    background-color: #EBEBEB;
+    color: #000000;
 }
