@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-/*
+
 @EnableJpaAuditing
 @SpringBootApplication
 public class Application {
@@ -20,10 +20,10 @@ public class Application {
 				.run(args);
 	}
 }
-*/
 
 
 
+/*
 @EnableJpaAuditing // JPA Auditing 활성화
 @SpringBootApplication
 public class Application {
@@ -32,3 +32,4 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 }
+*/
