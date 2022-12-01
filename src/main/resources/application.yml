@@ -7,6 +7,7 @@ spring:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
   config:
     use-legacy-processing: true
+
 ---
 spring:
   profiles: local
