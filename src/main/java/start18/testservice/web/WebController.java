@@ -18,8 +18,10 @@ public class WebController {
         model.addAttribute("posts", postsService.findAllDesc());
         return "main";
     }
+    /*
     @GetMapping("/menu")
     public String menu(Model model) {
         return "menu";
     }
+    */
 }
