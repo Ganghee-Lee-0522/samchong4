@@ -22,9 +22,4 @@ public class WebController {
     public String menu(Model model) {
         return "menu";
     }
-
-    @GetMapping("/main")
-    public String main2(Model model) {
-        return "main2";
-    }
 }
