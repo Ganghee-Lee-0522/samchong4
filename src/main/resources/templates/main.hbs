@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/app/main.css">
 </head>
 <body>
-<h1>신고 내역 관리</h1>
+<h1>신고 관리</h1>
 <div class="col-md-12" >
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">신고 수동 등록</button>
     <br/>
@@ -28,9 +28,9 @@
         <tbody id="tbody">
         {{#each posts}}
             <tr>
+                <td>{{id}}</td>
                 <td>{{title}}</td>
                 <td>{{author}}</td>
-                <td>{{content}}</td>
                 <td>{{modifiedDate}}</td>
             </tr>
         {{/each}}
@@ -52,14 +52,14 @@
                 <form>
                     <div class="form-group">
                         <label for="title">신고 고유 번호</label>
-                        <input type="text" class="form-control" id="title" placeholder="신고 고유 번호를 입력하세요">
+                        <input type="text" class="form-control" id="id" placeholder="신고 고유 번호를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="author"> 신고 위치 </label>
+                        <label for="title"> 신고 위치 </label>
                         <input type="text" class="form-control" id="author" placeholder="신고 위치를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="content"> 신고 분류 </label>
+                        <label for="author"> 신고 분류 </label>
                         <textarea class="form-control" id="content" placeholder="신고 분류를 입력하세요"></textarea>
                     </div>
                 </form>
