@@ -11,25 +11,25 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class Posts extends BaseTimeEntity {
+public class CctvPosts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private Long no;
 
     @Column(length = 500, nullable = false)
-    private String title;
+    private String place;
 
     @Column(columnDefinition = "TEXT", nullable = false)
     private String content;
 
     @Column(length = 20, nullable = false)
-    private String author;
+    private String admin;
 
     @Builder
-    public Posts(String title, String content, String author) {
-        this.title = title;
+    public CctvPosts(String place, String content, String admin) {
+        this.place = place;
         this.content = content;
-        this.author = author;
+        this.admin = admin;
     }
 }

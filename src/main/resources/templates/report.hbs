@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>[스타트18]신고 관리 게시판</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--부트스트랩 css 추가-->
+    <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
+    <!--custom css 추가-->
+    <link rel="stylesheet" href="/css/app/report.css">
+</head>
+<body>
+    <h1>신고 리스트 확인</h1>
+    <div class="col-md-12">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">신고 수동 등록</button>
+        <button type="button1" class="btn btn-grey navbar-btn find-btn1" onclick="location.href='/'">뒤로가기</button>
+        <br/>
+        <br/>
+        <!-- 목록 출력 영역 -->
+        <table class="table table-horizontal table-bordered">
+            <thead class="thead-strong">
+                <tr>
+                    <th>신고 번호</th>
+                    <th>발생 지역</th>
+                    <th>신고 분류</th>
+                    <th>발생 일시</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+                <tr>
+                    <td>start18-331</td>
+                    <td>서울시 서대문구 이화여대 1길</td>
+                    <td>폭행</td>
+                    <td>2022-10-05 14:21:34</td>
+                </tr>
+                <tr>
+                    <td>start18-179</td>
+                    <td>서울시 서대문구 이화여대 33길</td>
+                    <td>납치</td>
+                    <td>2022-11-14 08:55:21</td>
+                </tr>
+                <tr>
+                    <td>start18-223</td>
+                    <td>서울시 서대문구 이화여대 52길</td>
+                    <td>흉기난동</td>
+                    <td>2022-11-22 10:23:12</td>
+                </tr>
+            {{#each posts}}
+                <tr>
+                    <td>{{title}}</td>
+                    <td>{{author}}</td>
+                    <td>{{content}}</td>
+                    <td>{{modifiedDate}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="modal fade" id="savePostsModal" tabindex="-1" role="dialog" aria-labelledby="savePostsLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="savePostsLabel">신고 수동 등록</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">신고 고유 번호</label>
+                            <input type="text" class="form-control" id="title" placeholder="신고 고유 번호를 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="author"> 발생 지역 </label>
+                            <input type="text" class="form-control" id="author" placeholder="발생 지역을 입력하세요">
+                        </div>
+                        <div class="form-group">
+                            <label for="content"> 신고 분류 </label>
+                            <textarea class="form-control" id="content" placeholder="신고 분류를 입력하세요"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary" id="btn-save">등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--부트스트랩 js, jquery 추가-->
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/bootstrap.min.js"></script>
+    <!--custom js 추가-->
+    <script src="/js/app/report.js"></script>
+</body>
+</html>

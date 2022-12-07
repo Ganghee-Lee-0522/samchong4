@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>관리자 페이지</title>
+    <title>[스타트18]CCTV 관리 게시판</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!--부트스트랩 css 추가-->
     <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/app/main.css">
+    <!--custom css 추가-->
+    <link rel="stylesheet" href="/css/app/cctv.css">
 </head>
 <body>
-<h1>CCTV 관리</h1>
-<div class="col-md-12" >
+<h1>CCTV 리스트 확인</h1>
+<div class="col-md-12">
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#savePostsModal">CCTV 추가</button>
+    <button type="button1" class="btn btn-grey navbar-btn find-btn1" onclick="location.href='/'">뒤로가기</button>
     <br/>
     <br/>
     <!-- 목록 출력 영역 -->
@@ -27,23 +29,31 @@
         </thead>
         <tbody id="tbody">
             <tr>
-                <td>start18-202</td>
+                <td>start18-331</td>
                 <td>서울시 서대문구 이화여대 1길</td>
-                <td>이강희</td>
-                <td>2022-04-07</td>
-            </tr>
-            <tr>
-                <td>start18-232</td>
-                <td>서울시 서대문구 이화여대 52길</td>
-                <td>김주연</td>
-                <td>2022-11-24</td>
-            </tr>
-            <tr>
-                <td>start18-212</td>
-                <td>서울시 서대문구 이화여대 33길</td>
                 <td>이주미</td>
-                <td>2022-07-19</td>
+                <td>2022-10-05 14:21:34</td>
             </tr>
+            <tr>
+                <td>start18-179</td>
+                <td>서울시 서대문구 이화여대 33길</td>
+                <td>김주연</td>
+                <td>2022-11-14 08:55:21</td>
+            </tr>
+            <tr>
+                <td>start18-223</td>
+                <td>서울시 서대문구 이화여대 52길</td>
+                <td>이강희</td>
+                <td>2022-11-22 10:23:12</td>
+            </tr>
+        {{#each cctvposts}}
+            <tr>
+                <td>{{place}}</td>
+                <td>{{content}}</td>
+                <td>{{admin}}</td>
+                <td>{{modifiedDate}}</td>
+            </tr>
+        {{/each}}
         </tbody>
     </table>
 </div>
@@ -53,7 +63,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="savePostsLabel">CCTV 추가</h5>
+                <h5 class="modal-title" id="savePostsLabel">CCTV 신규 등록</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -61,16 +71,16 @@
             <div class="modal-body">
                 <form>
                     <div class="form-group">
-                        <label for="title">CCTV 고유 번호</label>
-                        <input type="text" class="form-control" id="id" placeholder="CCTV 고유 번호를 입력하세요">
+                        <label for="place">CCTV 고유 번호</label>
+                        <input type="text" class="form-control" id="place" placeholder="CCTV 고유 번호를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="title"> 설치 위치 </label>
-                        <input type="text" class="form-control" id="author" placeholder="설치 위치를 입력하세요">
+                        <label for="content"> 설치 위치 </label>
+                        <input type="text" class="form-control" id="content" placeholder="설치 위치를 입력하세요">
                     </div>
                     <div class="form-group">
-                        <label for="author"> 관리자 </label>
-                        <textarea class="form-control" id="content" placeholder="관리자를 입력하세요"></textarea>
+                        <label for="admin"> 관리자 </label>
+                        <textarea class="form-control" id="admin" placeholder="관리자를 입력하세요"></textarea>
                     </div>
                 </form>
             </div>
@@ -87,7 +97,7 @@
 <script src="/js/lib/bootstrap.min.js"></script>
 
 <!--custom js 추가-->
-<script src="/js/app/main.js"></script>
+<script src="/js/app/cctv.js"></script>
 
 </body>
 </html>
