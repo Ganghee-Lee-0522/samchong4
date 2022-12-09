@@ -19,7 +19,7 @@
 
 >### 다운로드 및 실행
 
-####웹 페이지
+#### 웹 페이지
 1. 아래 링크에 따라 github repository에 접근하십시오.
 ```
 https://github.com/Ganghee-Lee-0522/samchong4
@@ -31,7 +31,7 @@ https://github.com/Ganghee-Lee-0522/samchong4
 6. 관리자 웹 페이지가 실행되는 것을 확인하실 수 있습니다.
 7. 현재 구현된 기능은 관리자 페이지 메인 화면/CCTV 리스트 확인 및 추가/신고 내역 리스트 확인 및 추가 기능입니다.
 
-####딥러닝 부분
+#### 딥러닝 부분
 1. 아래 링크에 따라 github 폴더에 접근하십시오.
 ```
 https://github.com/Ganghee-Lee-0522/samchong4
