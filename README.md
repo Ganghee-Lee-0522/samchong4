@@ -43,7 +43,9 @@ YOLO와 OpenPose로 폭행, 싸움, 흉기난동, 살인을 탐지합니다. 이
 ![폭행](https://user-images.githubusercontent.com/79368467/206645114-510b2f17-037e-4fd9-ba61-dfd968eb9838.gif)
 
 >>>>>>> DL
+`🔻식별 상황 예시(2) : 납치 상황`
 
+![납치](https://user-images.githubusercontent.com/79368467/206645144-bf06ccb7-8721-476c-85a2-a09547ab1d2e.gif)
 
 #### 2. 범죄 상황 문자 신고
 
