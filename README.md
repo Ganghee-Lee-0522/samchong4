@@ -40,7 +40,7 @@ https://github.com/Ganghee-Lee-0522/samchong4
 ```
 2. 우상단의 `<>code` 를 눌러 Download ZIP을 선택하고 다운로드하십시오.
 3. 다운로드한 파일의 압축을 풀고 `samchong4-master/DL` 파일을 여십시오.
-4. google colab에 접속하여 원하는 파일을 업로드 하십시오.
+4. google colab에 접속하여 원하는 `yolov3_inference.ipynb`와 `yolov3_train_coco.ipynb`중 하나의 파일을 업로드 하십시오.
 5. 런타임 > 모두 실행 버튼을 눌러 실행하십시오.
 6. 현재의 코드는 YOLO inference와 train을 위한 코드입니다. dataset을 바꾸어 다시 train 할 수 있습니다.
 
