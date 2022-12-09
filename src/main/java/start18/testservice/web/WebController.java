@@ -9,7 +9,7 @@ import start18.testservice.service.PostsService;
 
 @Controller
 @AllArgsConstructor
-public class webController {
+public class WebController {
 
     private PostsService postsService;
     private CctvPostsService cctvPostsService;
