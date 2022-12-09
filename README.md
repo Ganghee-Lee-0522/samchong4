@@ -33,7 +33,7 @@ https://github.com/Ganghee-Lee-0522/samchong4
 
 </br>
 
-#### 딥러닝 부분
+#### 딥러닝
 1. 아래 링크에 따라 github 폴더에 접근하십시오.
 ```
 https://github.com/Ganghee-Lee-0522/samchong4
